@@ -10,10 +10,13 @@ This section will guide you through configuring the Bot's Permissions when using
 
 
 ## Using Administrator permissions: **[Recommended]**
+Give the bot `Administrator` in the integrated bot role. 
 
-You will only need to setup a few Permissions for your Users to be able to open tickets when using [Thread mode](../dashboard/settings/thread-mode.md). You will need to give your Users the `Send messages in Threads` Permission in your Panel channel so that they can write in Tickets.
+Channel Mode: You're done!
 
-Now you can go ahead with the next step of the Bot Configuration:  [Bot Configuration](./configuration.md)
+[Thread Mode](../features/thread-mode.md): Give the @everyone role the `Send Messages in Threads` permission in the overrides for any channel with a ticket panel in it. This allows non-staff to type in their ticket threads. *Note: The "Send Messages" permission is not needed!*
+
+That's it! The next step is  [Bot Configuration](./configuration.md)
 
 
 ## Using seperate Permissions: [Complicated]
@@ -43,8 +46,11 @@ You will need to set each of these Permissions to `True` in each of the above na
 
 When using [Thread mode](../dashboard/settings/thread-mode.md) you will also need to give your Users the `Send messages in Threads` Permission in your Panel channel so that they can write in Tickets.
 
-You can now also run the `/checkpermissions` command that will tell you which Permissions are missing and where (only works correctly after channels have been set in the [Dashboard](https://dashboard.ticketsbot.cloud)). If you're not the owner of the server, now would be a good time to get the owner to designate you as an admin of Tickets so that you can use this command. You can do this by asking the owner to run the command `/addadmin @YourUsername` in a channel the bot can see. If successful, Tickets will show you a ✅.
-If you ran the `/checkpermissions` command and none are missing then you have succesfully completed this section of the setup.
+The `/checkpermissions` command is available to [Bot Admins](../commands/add-admin-support.md) and will report any missing permissions in the bot's role and any channel or category it is trying to access.
+
+This command will only report missing permissions on ticket functions that have been set. If you haven't set up your bot yet, it *will not* tell you what you're missing *except* in the bot's role. Run the command again after you've set your bot up: panels created, transcript channel set, etc.
+
+If there are no errors listed after setting up your bot, your permissions are set properly.
 
 Now we can start configuring the rest of the Bot: [Bot Configuration](./configuration.md)
 

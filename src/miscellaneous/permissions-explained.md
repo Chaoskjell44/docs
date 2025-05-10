@@ -2,7 +2,8 @@
 ***
 For the Bot to work fully it needs many permissions.
 
-Either you manually give it each needed permissions or you give it the `Administrator` permission which will just make it "work".
+Either you manually give it each needed permissions or you give it the `Administrator` permission which will just make it "work".  For an explanation of how to adjust permissions, [check the Discord help article](https://support.discord.com/hc/en-us/articles/206029707-How-do-I-set-up-Permissions).
+
 
 Below is a rough explanation of what each permission is used for:
 
