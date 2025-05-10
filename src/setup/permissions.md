@@ -11,9 +11,10 @@ This section will guide you through configuring the Bot's Permissions when using
 
 ## Using Administrator permissions: **[Recommended]**
 
-You will only need to setup a few Permissions for your Users to be able to open tickets.
+You will only need to setup a few Permissions for your Users to be able to open tickets when using [Thread mode](../dashboard/settings/thread-mode.md). You will need to give your Users the `Send messages in Threads` Permission in your Panel channel so that they can write in Tickets.
 
-When using [Thread mode](../dashboard/settings/thread-mode.md) you will also need to give your Users the `Send messages in Threads` Permission in your Panel channel so that they can write in Tickets.
+Now you can go ahead with the next step of the Bot Configuration:  [Bot Configuration](./configuration.md)
+
 
 ## Using seperate Permissions: [Complicated]
 
@@ -39,8 +40,12 @@ You will need to set each of these Permissions to `True` in each of the above na
 * `Read Message History`
 * `Use Application Commands`
 
-> **Note:** Each permission and it's uses get explained in: [Permission Explained](../miscellaneous/permissions-explained.md)
 
 When using [Thread mode](../dashboard/settings/thread-mode.md) you will also need to give your Users the `Send messages in Threads` Permission in your Panel channel so that they can write in Tickets.
 
-You can now also run the new `/checkpermissions` command that will tell you which Permissions are missing and where. If you're not the owner of the server, now would be a good time to get the owner to designate you as an admin of Tickets so that you can use this command. You can do this by asking the owner to run the command `/addadmin @YourUsername` in a channel the bot can see. If successful, Tickets will show you a ✅.
+You can now also run the `/checkpermissions` command that will tell you which Permissions are missing and where. If you're not the owner of the server, now would be a good time to get the owner to designate you as an admin of Tickets so that you can use this command. You can do this by asking the owner to run the command `/addadmin @YourUsername` in a channel the bot can see. If successful, Tickets will show you a ✅.
+If you ran the `/checkpermissions` command and none are missing then you have succesfully completed this section of the setup.
+
+Now we can start configuring the rest of the Bot: [Bot Configuration](./configuration.md)
+
+> **Note:** You can find an explanation of each permission and it's uses in: [Permission Explained](../miscellaneous/permissions-explained.md)
