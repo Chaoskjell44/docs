@@ -4,6 +4,7 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Tickets V2"
+description = "Documentation of the Discord Tickets V2 Bot"
 
 [output.html]
 default-theme = "ayu"
